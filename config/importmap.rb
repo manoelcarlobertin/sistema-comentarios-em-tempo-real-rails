@@ -15,4 +15,4 @@ pin "@rails/actiontext", to: "actiontext.esm.js"
 pin "local-time" # @3.0.3
 # Esse pacote é usado para exibir datas e horas no fuso horário local do usuário.
 # (pasta vendor/javascript), para poder ler (usar) quando quiser, sem depender da internet.
-pin "flowbite", to: "https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.turbo.min.js"
+pin "flowbite", to: "https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.turbo.min.js"pin "@avo-hq/marksmith", to: "@avo-hq--marksmith.js" # @0.4.7
