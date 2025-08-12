@@ -1,0 +1,18 @@
+<%= simple_form_for([:admin, @post], html: { multipart: true }) do |f| %>
+  <%= f.input :title, label: "Título", input_html: {
+    class: "mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-300"},
+    label_html: { class: "block text-sm font-medium text-gray-700 dark:text-gray-300" } %>
+
+  <%= f.input :body, as: :rich_text_area, label: "Conteúdo", input_html: {
+    class: "mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-300"},
+    label_html: { class: "block text-sm font-medium text-gray-700 dark:text-gray-300" } %>
+
+  <%= f.input :banner_image, as: :file, label: "Imagem de capa", input_html: {
+    class: "mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-300"},
+    label_html: { class: "block text-sm font-medium text-gray-700 dark:text-gray-300" } %>
+
+  <div>
+    <%= f.button :submit, "Salvar Post",
+      class: "inline-flex items-center justify-center w-full sm:w-auto rounded-md bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 text-sm font-medium shadow-sm transition" %>
+  </div>
+<% end %>
